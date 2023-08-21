@@ -26,7 +26,7 @@ namespace ROBM
             routes.MapRoute(
                     name: "RCO",
                     url: "RCO/{id}",
-                    defaults: new { Controller = "RCO" action = "Index", id = UrlParameter.Optional }
+                    defaults: new { Controller = "RCO", action = "Index", id = UrlParameter.Optional }
                 );
         }
     }
