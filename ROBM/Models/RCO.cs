@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ROBM.Models
 {
-    public class RCO
+    public class Rco
     {
         public int RCO_Id { get; set; }
         public string Ref_No { get; set; }
