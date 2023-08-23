@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ROBM.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -84,6 +85,43 @@ namespace ROBM.Controllers
             {
                 return View();
             }
+        }
+
+        // Corrected: Move the method inside the controller class
+        [NonAction]
+        public List<Rco> GetRcoList()
+        {
+            return new List<Rco>{
+                new Rco{
+                    RCO_Id = 1,
+                    Ref_No = "16157311163900",
+                    ERO_No = 1,
+                    ERO_Issue_Date = DateTime.Parse(DateTime.Today.ToString()),
+                    ERO_Amount = 16000,
+                    ERO_Implement_Date = DateTime.Parse(DateTime.Today.ToString()),
+                    Arrear = 0,
+                    RCO_Fee = 1000,
+                    CRC_Remarks = "",
+                    User_Name = "Mudasir",
+                    Create_Date = DateTime.Parse(DateTime.Today.ToString()),
+                    Create_Time =DateTime.Parse(DateTime.Today.ToString()),
+                },
+
+                new Rco{
+                    RCO_Id = 2,
+                    Ref_No = "16157311163900",
+                    ERO_No = 1,
+                    ERO_Issue_Date = DateTime.Parse(DateTime.Today.ToString()),
+                    ERO_Amount = 16000,
+                    ERO_Implement_Date = DateTime.Parse(DateTime.Today.ToString()),
+                    Arrear = 0,
+                    RCO_Fee = 1000,
+                    CRC_Remarks = "",
+                    User_Name = "Mudasir",
+                    Create_Date = DateTime.Parse(DateTime.Today.ToString()),
+                    Create_Time =DateTime.Parse(DateTime.Today.ToString()),
+                },
+            };
         }
     }
 }
