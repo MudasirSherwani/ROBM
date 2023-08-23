@@ -12,7 +12,10 @@ namespace ROBM.Controllers
         // GET: Rco
         public ActionResult Index()
         {
-            return View();
+            var rcos = from e in GetRcoList()
+                            orderby e.RCO_Id
+                            select e;
+            return View(rcos);
         }
 
         // GET: Rco/Details/5
