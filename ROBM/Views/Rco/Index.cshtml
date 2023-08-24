@@ -1,0 +1,107 @@
+﻿@model IEnumerable<ROBM.Models.Rco>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RCO_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ref_No)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ERO_No)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ERO_Issue_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ERO_Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ERO_Implement_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Arrear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RCO_Fee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CRC_Remarks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Create_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Create_Time)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RCO_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ref_No)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ERO_No)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ERO_Issue_Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ERO_Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ERO_Implement_Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Arrear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RCO_Fee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CRC_Remarks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Create_Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Create_Time)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
