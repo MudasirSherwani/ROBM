@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>RCO List</title>
 </head>
 <body>
     <p>
@@ -36,9 +36,6 @@
                 @Html.DisplayNameFor(model => model.ERO_Implement_Date)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Arrear)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.RCO_Fee)
             </th>
             <th>
@@ -49,9 +46,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Create_Date)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Create_Time)
             </th>
             <th></th>
         </tr>
@@ -77,9 +71,6 @@
                 @Html.DisplayFor(modelItem => item.ERO_Implement_Date)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Arrear)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.RCO_Fee)
             </td>
             <td>
@@ -90,9 +81,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Create_Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Create_Time)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
