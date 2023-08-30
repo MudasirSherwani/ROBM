@@ -28,6 +28,11 @@ namespace ROBM
                     url: "RCO/{id}",
                     defaults: new { Controller = "RCO", action = "Index", id = UrlParameter.Optional }
                 );
+            routes.MapRoute(
+        name: "RCO",
+        url: "RCO/Create",
+        defaults: new { Controller = "RCO", action = "Create", id = UrlParameter.Optional }
+    );
         }
     }
 }
